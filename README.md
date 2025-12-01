@@ -1,16 +1,46 @@
-# React + Vite
+# React Accounts App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple React project made for an internship practical test.
+The app lets a user register, login and update basic account information.
+All the data is stored in the browser using localStorage.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Register new account
+- Login with email and password
+- Edit profile details (name + bio)
+- Simple navigation using React Router
+- Basic UI done with Bootstrap
+- No backend, only localStorage
 
-## React Compiler
+## How to Run
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Download or clone the repository
+2. Install dependencies:
 
-## Expanding the ESLint configuration
+   npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Start the app:
+
+   npm run dev
+
+4. Open http://localhost:5173 in the browser
+
+## Technologies
+
+- React (v18+)
+- React Router DOM
+- Bootstrap 5
+- LocalStorage
+
+## Project Structure
+
+src/
+  components/
+    Login.js
+    Register.js
+    Account.js
+    Navbar.js
+  App.js
+  index.js
+  styles.css
